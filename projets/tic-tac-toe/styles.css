@@ -1,38 +1,62 @@
 body {
-  font-family: sans-serif;
+  font-family: "Jacquard 24", system-ui;
+  color: rgba(243, 178, 224, 1);
   text-align: center;
-  background: #f0f0f0;
+  background: rgba(10, 7, 33, 1);
+  display: flex;
+  flex-direction: column;
+  margin-top: 150px;
+  height: 1200px;
 }
 h1 {
   margin-top: 20px;
+  font-size: 5.3rem;
+  text-shadow: 0px 0px 10px #f3b2e055;
 }
 .board {
   display: grid;
   grid-template-columns: repeat(3, 100px);
   grid-template-rows: repeat(3, 100px);
   gap: 5px;
-  margin: 20px auto;
+  margin: 10px auto;
   width: max-content;
 }
 .cell {
-  background: white;
-  border: 2px solid #333;
-  font-size: 3rem;
+  background: rgba(10, 7, 33, 1);
+  border-radius: 20px;
+  border: 6px solid #f3b2e0;
+  font-size: 5rem;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  box-shadow: 0px 0px 20px 1px #f3b2e0;
 }
+
 .cell.taken {
   cursor: not-allowed;
+  text-shadow: 0px 0px 10px #f3b2e0;
 }
 .status {
   margin-top: 20px;
   font-size: 1.5rem;
+  text-shadow: 0px 0px 10px #f3b2e0;
 }
 .reset {
   margin-top: 20px;
   padding: 10px 20px;
-  font-size: 1rem;
+  font-size: 2rem;
+  color: rgba(10, 7, 33, 1);
   cursor: pointer;
+  background-color: rgba(243, 178, 224, 1);
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px 1px #f3b2e0;
+  text-shadow: 0px 0px 10px 1px #f3b2e0;
+  font-family: "Jacquard 24", system-ui;
+
+  width: 120px;
+  display: flex;
+  flex-direction: column;
+  margin: 10px auto;
+  text-shadow: 0px 0px 2.5px #0a0721;
 }
